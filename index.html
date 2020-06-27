@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/imgaes/calc-fav.png">
+</head>
+<body>
+
+    <div class="container">
+      <h2>Calculator</h2>
+        <div class="calc-body">
+          <div class="calc-screen">
+           
+            <div id="result">
+                <input placeholder="0" type="text" id="result1" >
+              </div>
+          </div>
+          <div class="calc-button-row">
+            <div onclick="clearResult()" class="button c">C</div>
+            <div class="button l">≠</div>
+            <div onclick="getNumber('%')" class="button l">%</div>
+            <div onclick="getNumber('/')" class="button l">/</div>
+          </div>
+          <div class="calc-button-row">
+            <div onclick="getNumber('7')" class="button">7</div>
+            <div onclick="getNumber('8')" class="button">8</div>
+            <div onclick="getNumber('9')" class="button">9</div>
+            <div onclick="getNumber('*')" class="button l">x</div>
+          </div>
+          <div class="calc-button-row">
+            <div onclick="getNumber('4')" class="button">4</div>
+            <div onclick="getNumber('5')" class="button">5</div>
+            <div onclick="getNumber('6')" class="button">6</div>
+            <div onclick="getNumber('-')" class="button l">−</div>
+          </div>
+          <div class="calc-button-row">
+            <div onclick="getNumber('1')" class="button">1</div>
+            <div onclick="getNumber('2')" class="button">2</div>
+            <div onclick="getNumber('3')" class="button">3</div>
+            <div onclick="getNumber('+')" class="button l">+</div>
+          </div>
+          <div class="calc-button-row">
+            <div onclick="getNumber('.')" class="button">.</div>
+            <div onclick="getNumber('0')" class="button">0</div>
+            <div class="button">
+              <</div>
+                <div onclick="getResult()" class="button l">=</div>
+            </div>
+          </div>
+        </div>
+    
+</body>
+<script src="index.js"></script>
+</html>
